@@ -1,35 +1,24 @@
+// app.js
 const express = require('express');
-
-
 const app = express();
+const produto = require('./public/Produtoff');
 
-app.get('/', function (req,res){
-  res.sendFile(__dirname + '/commerceindex.html.js');
-})
+console.log(produto);
 
+app.use(express.static('public'));
 
-// const servidor = http.createServer((req, res)=>{
-//   res.writeHead(200, {'Content-Type': 'text/html'});
-//   res.write('script.js');
-//   res.end();
-// }).listen(8000);
+app.get('/', function (req, res) {
+  res.sendFile(__dirname + '/public/html/ecommerceindex.html');
+});
 
+app.get('/prood', function (req, res) {
+  res.send(produto);
+});
 
+app.get('/public/html/carrinho.html', function (req, res) {
+  res.sendFile(__dirname + '/public/html/carrinho.html');
+});
 
-// const Produtoff = require('./Produtoff.js'); // Adjust the path as needed
-
-
-
-// const app = express();
-// const port = 8000;
-
-// const produtoInstacia = new Produtoff();
-
-// app.get('/getProdutoffInstance', (req, res) => {
-//     res.json(produtoInstacia);
-//   });
-  
-
-// app.listen(port, () => {
-//   console.log(`Server is running at http://localhost:${port}`);
-// });
+app.listen(8081, function () {
+  console.log('Server is running on http://localhost:8081');
+});
