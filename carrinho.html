@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="styyle.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.1/redux.js" 
+    integrity="sha512-Olr8rkMYuxq3KpAPjYA/mAVYe7EIEP4RkhoAvD/qOrlauzE4CTvpQSg/cRX0/5Qreret4aobD0vg1xtjBqR7VA==" 
+    crossorigin="anonymous"></script>
+    <script type = "module" src="shopping.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header">
+        <a href="ecommerceindex.html">
+            <h1> Rod-Commerce </h1>
+        </a>
+        <input id="procurar">
+        <a href="carrinho.html">
+            <i id="produtos-adicionados" class="fa-sharp fa-solid fa-cart-shopping"></i>
+        </a>
+    </header>
+
+    
+
+    <main>
+        <section>
+            <h1>Carrinho de Compras</h1>
+        </section>
+        <section class="main">
+        <!-- Container to display the cart content -->
+        <div class="produtos" id="exibidor"></div>
+
+        <div id="totals">
+            <h1> Total da compra: </h1>
+            <h2 id="total"></h2>
+        </div>
+    </section>
+    </main>
+
+   
+
+
+</body>
+
+</html>
