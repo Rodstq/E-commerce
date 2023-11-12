@@ -1,0 +1,145 @@
+
+  <header id="header">
+    <a href="/">
+      <h1> Rod-Commerce </h1>
+    </a>    
+    <input id="procurar">
+    <a href="/public/html/carrinho.html">
+      <i id="produtos-adicionados"class="fa-sharp fa-solid fa-cart-shopping"></i>      
+    </a>
+  </header>
+
+<main class="main">
+
+  <div class="menu">
+    <div class="secoes">
+    <p> Roupas </p>
+      <div class="opcoes-roupas"> 
+        <a href="#">Camisas</a>
+        <a href="#">Moletons</a>
+        <a href="#">Calças</a>
+      </div>
+      <hr>
+    </div>
+    <div class="secoes">
+      <p> Acessórios </p>
+        <div class="opcoes-roupas"> 
+          <a href="#">Óculos</a>
+          <a href="#">Colares</a>
+          <a href="#">Brincos</a>
+          <a href="#">Pulseiras</a>
+        </div>
+        <hr>
+      </div>
+  </div>
+</div>
+
+
+  <div class="produtos" id="produtos">
+        <div class="exibidor"> 
+          <img class="imgprod" src="./produtos/calca1.jpeg">
+          <p class="descricao" > Calça Cargo Bolso Masculino Preto Hip Hop Casual Jogger Streetwear </p>
+          <p id="preco"> $150.90 </p>
+          <span>
+            <a> 
+              <button id="calca_branca" class="addcarrinho">adicionar ao carrinho</button>
+            </a>
+            <a href="finalizarcompra.html"> 
+              <button> comprar </button>
+            </a>    
+          </span>
+        </div>
+        <div class="exibidor"> 
+          <img class="imgprod" src="./produtos/calca2.jpeg">
+          <p class="descricao" > Men's fashion casual pocket overalls men's street clothing Korean loose hip-hop </p>
+          <p id="preco"> $119.90 </p>
+          <span>
+            <a> 
+              <button id="calca_preta" class="addcarrinho" >adicionar ao carrinho</button>
+            </a>
+            <a href="finalizarcompra.html"> 
+              <button> comprar </button>
+            </a>    
+        </span>
+        </div>
+        <div class="exibidor"> 
+          <img class="imgprod" src="./produtos/calca3.jpeg">
+          <p class="descricao" > Calças Hip Hop Homens Soltos Calças Corredores Streetwear </p>
+          <p id="preco"> $119.90 </p>
+          <span>
+            <a> 
+              <button id="calca_preta_graph"class="addcarrinho" >adicionar ao carrinho</button>
+            </a>
+            <a href="finalizarcompra.html"> 
+              <button> comprar </button>
+            </a>    
+          </span>
+        </div>
+        <div class="exibidor"> 
+          <img class="imgprod" src="./produtos/moletom2.jpeg">
+          <p class="descricao"> Moletom Masculino Com Capuz Manga Comprida </p>
+          <p id="preco"> $119.90 </p>
+          <span>
+            <a> 
+              <button id="moletom_black_white" class="addcarrinho" >adicionar ao carrinho</button>
+            </a>
+            <a href="finalizarcompra.html"> 
+              <button> comprar </button>
+            </a>    
+          </span>
+        </div>
+        <div class="exibidor"> 
+          <img class="imgprod" src="./produtos/moletom3.jpeg">
+          <p class="descricao" >Hong Kong Camisola De Capuz De hip-hop Masculina Com Zíper Preto </p>
+          <p id="preco"> $119.90 </p>
+          <span>
+            <a> 
+              <button id="moletom_ziper_black_white" class="addcarrinho" >adicionar ao carrinho</button>
+            </a>
+            <a href="finalizarcompra.html"> 
+              <button> comprar </button>
+            </a>            
+          </span>
+        </div>
+        <div class="exibidor"> 
+          <img class="imgprod" src="./produtos/kimono1.jpeg">
+          <p class="descricao">Demon Kimono Cosplay Samurai Haori Obi Mulheres Homens </p>
+          <p id="preco"> $119.90 </p>
+          <span>
+            <a> 
+              <button id="kimono_dragon" class="addcarrinho" >adicionar ao carrinho</button>
+            </a>
+            <a href="finalizarcompra.html"> 
+              <button> comprar </button>
+            </a>    
+          </span>
+        </div>
+  </div>
+</main>
+
+  <footer>
+    <a href="#"> contato </a>
+    <a href="#"> sobre nós </a>
+  </footer>    
+{{!-- <script>
+if (typeof document !== 'undefined') {
+    var buttonPressed = function (e) {
+      var currentElement = e.target.parentElement.parentElement.parentElement;
+      var id = currentElement.getElementsByClassName("addcarrinho")[0].id;
+
+      fetch('/clicked')
+      .then(response => response.text())
+      .then(data => console.log(data))
+      .catch(error => console.error('Error:', error));
+
+       };
+
+  // Adding click event listeners to the buttons
+  var buttons = document.getElementsByClassName("addcarrinho");
+
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", buttonPressed);
+  }
+}
+
+</script> --}}
