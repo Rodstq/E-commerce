@@ -1,151 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  loja </title>
-    <link rel="stylesheet" type="text/css" href="../public/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script type="module" src="../public/script.js" defer></script>
-  </head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Rod-Commerce </title>
+  <link rel="stylesheet" type="text/css" href="../public/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script type="module" src="../public/script.js" defer></script>
+</head>
+
 <body>
   <header id="header">
-    <a href="">
-      <h1> Rod-Commerce </h1>
-    </a>    
+    <h1 id="homePage"> Rod-Commerce </h1>
     <input id="procurar">
-    <button id="carrinhoButton">
-      <i id="produtos-adicionados"class="fa-sharp fa-solid fa-cart-shopping"></i>      
-  </button>
+
+    <i id="carrinhoButton" class="fa-sharp fa-solid fa-cart-shopping"></i>
+
   </header>
 
-<main class="main">
+  <main class="main">
 
-  <div class="menu">
-    <div class="secoes">
-    <p> Roupas </p>
-      <div class="opcoes-roupas"> 
-        <a href="#">Camisas</a>
-        <a href="#">Moletons</a>
-        <a href="#">Calças</a>
-      </div>
-      <hr>
-    </div>
-    <div class="secoes">
-      <p> Acessórios </p>
-        <div class="opcoes-roupas"> 
-          <a href="#">Óculos</a>
-          <a href="#">Colares</a>
-          <a href="#">Brincos</a>
-          <a href="#">Pulseiras</a>
-        </div>
-        <hr>
-      </div>
-  </div>
-</div>
-
-
-  <div class="produtos" id="produtos">
-        <div class="exibidor"> 
-          <img class="imgprod" src="../public/produtos/calca1.jpeg">
-          <p class="descricao" > Calça Cargo Bolso Masculino Preto Hip Hop Casual Jogger Streetwear </p>
-          <p id="preco"> $150.90 </p>
-          <span>
-            <a> 
-              <button id="calca_branca" class="addcarrinho">adicionar ao carrinho</button>
-            </a>
-            <a href="finalizarcompra.html"> 
-              <button> comprar </button>
-            </a>    
-          </span>
-        </div>
-        <div class="exibidor"> 
-          <img class="imgprod" src="../public/produtos/calca2.jpeg">
-          <p class="descricao" > Men's fashion casual pocket overalls men's street clothing Korean loose hip-hop </p>
-          <p id="preco"> $119.90 </p>
-          <span>
-            <a> 
-              <button id="calca_preta" class="addcarrinho" >adicionar ao carrinho</button>
-            </a>
-            <a href="finalizarcompra.html"> 
-              <button> comprar </button>
-            </a>    
+    <div class="produtos" id="produtos">
+      <div class="exibidor">
+        <img class="imgprod" src="../public/produtos/calca1.jpeg">
+        <p class="descricao"> Calça Cargo Bolso Masculino Preto Hip Hop Casual Jogger Streetwear </p>
+        <p id="preco"> $150 </p>
+        <span>
+          <a>
+            <button id="calca_branca" class="addcarrinho">adicionar ao carrinho</button>
+          </a>
         </span>
-        </div>
-        <div class="exibidor"> 
-          <img class="imgprod" src="../public/produtos/calca3.jpeg">
-          <p class="descricao" > Calças Hip Hop Homens Soltos Calças Corredores Streetwear </p>
-          <p id="preco"> $119.90 </p>
-          <span>
-            <a> 
-              <button id="calca_preta_graph"class="addcarrinho" >adicionar ao carrinho</button>
-            </a>
-            <a href="finalizarcompra.html"> 
-              <button> comprar </button>
-            </a>    
-          </span>
-        </div>
-        <div class="exibidor"> 
-          <img class="imgprod" src="../public/produtos/moletom2.jpeg">
-          <p class="descricao"> Moletom Masculino Com Capuz Manga Comprida </p>
-          <p id="preco"> $119.90 </p>
-          <span>
-            <a> 
-              <button id="moletom_black_white" class="addcarrinho" >adicionar ao carrinho</button>
-            </a>
-            <a href="finalizarcompra.html"> 
-              <button> comprar </button>
-            </a>    
-          </span>
-        </div>
-        <div class="exibidor"> 
-          <img class="imgprod" src="../public/produtos/moletom3.jpeg">
-          <p class="descricao" >Hong Kong Camisola De Capuz De hip-hop Masculina Com Zíper Preto </p>
-          <p id="preco"> $119.90 </p>
-          <span>
-            <a> 
-              <button id="moletom_ziper_black_white" class="addcarrinho" >adicionar ao carrinho</button>
-            </a>
-            <a href="finalizarcompra.html"> 
-              <button> comprar </button>
-            </a>            
-          </span>
-        </div>
-        <div class="exibidor"> 
-          <img class="imgprod" src="../public/produtos/kimono1.jpeg">
-          <p class="descricao">Demon Kimono Cosplay Samurai Haori Obi Mulheres Homens </p>
-          <p id="preco"> $119.90 </p>
-          <span>
-            <a> 
-              <button id="kimono_dragon" class="addcarrinho" >adicionar ao carrinho</button>
-            </a>
-            <a href="finalizarcompra.html"> 
-              <button> comprar </button>
-            </a>    
-          </span>
-        </div>
-  </div>
+      </div>
+      <div class="exibidor">
+        <img class="imgprod" src="../public/produtos/calca2.jpeg">
+        <p class="descricao"> Men's fashion casual pocket overalls men's street clothing Korean loose hip-hop </p>
+        <p id="preco"> $136 </p>
+        <span>
+          <a>
+            <button id="calca_preta" class="addcarrinho">adicionar ao carrinho</button>
+          </a>
+        </span>
+      </div>
+      <div class="exibidor">
+        <img class="imgprod" src="../public/produtos/calca3.jpeg">
+        <p class="descricao"> Calças Hip Hop Homens Soltos Calças Corredores Streetwear </p>
+        <p id="preco"> $215 </p>
+        <span>
+          <a>
+            <button id="calca_preta_graph" class="addcarrinho">adicionar ao carrinho</button>
+          </a>
+        </span>
+      </div>
+      <div class="exibidor">
+        <img class="imgprod" src="../public/produtos/moletom2.jpeg">
+        <p class="descricao"> Moletom Masculino Com Capuz Manga Comprida </p>
+        <p id="preco"> $171 </p>
+        <span>
+          <a>
+            <button id="moletom_black_white" class="addcarrinho">adicionar ao carrinho</button>
+          </a>
+      </div>
+      <div class="exibidor">
+        <img class="imgprod" src="../public/produtos/moletom3.jpeg">
+        <p class="descricao">Hong Kong Camisola De Capuz De hip-hop Masculina Com Zíper Preto </p>
+        <p id="preco"> $125 </p>
+        <span>
+          <a>
+            <button id="moletom_ziper_black_white" class="addcarrinho">adicionar ao carrinho</button>
+          </a>
+        </span>
+      </div>
+      <div class="exibidor">
+        <img class="imgprod" src="../public/produtos/kimono1.jpeg">
+        <p class="descricao">Demon Kimono Cosplay Samurai Haori Obi Mulheres Homens </p>
+        <p id="preco"> $119 </p>
+        <span>
+          <a>
+            <button id="kimono_dragon" class="addcarrinho">adicionar ao carrinho</button>
+          </a>
+        </span>
+      </div>
 
-  
-<section class="notVisible main" id="carrinhoDisplay" style=" border: 1px solid red">
-    <!-- Container to display the cart content -->
-    <div style=" border: 1px solid red" class="produtos" id="exibidor"></div>
-    
-    <div style=" border: 1px solid red">
-      <h1>Carrinho de Compras</h1>
-  
-    <div id="totals">
-      <h1> Total da compra: </h1>
-      <h2 id="total"></h2>
-  </div>
-</section>
-  
-</main>
+    </div>
+
+    <section class="produtos" id="carrinhoDisplay">
+      <div class="carrinhoLabel" id="carroProdutos">
+        <h1 id="carrinhoLabelh1">Carrinho de Compras</h1>
+        <h1 id="carrinhoLabelh1"> Total da compra: </h1>
+        <h2 class="totalValor" id="carrinhoLabelh1"></h2>
+        <button class="finalizarCompra" id="carrinhoLabelh1"> Finalizar compra </button>
+      </div>
+      <div id="carroProdutosexibe"></div>
+    </section>
+  </main>
 
   <footer>
     <a href="#"> contato </a>
     <a href="#"> sobre nós </a>
-  </footer>    
+  </footer>
 </body>
+
 </html>

@@ -3,7 +3,7 @@ const Produtoff = {
     calca_branca: {
       imgSrc: "./produtos/calca1.jpeg",
       descricao: "Calça Cargo Bolso Masculino Preto Hip Hop Casual Jogger Streetwear",
-      preco: "$150.90",
+      preco: "$150",
       id: "calca_branca",
       imgC: "imgprod",
       count: 1,
@@ -12,7 +12,7 @@ const Produtoff = {
     calca_preta: {
       imgSrc: "./produtos/calca2.jpeg",
       descricao: "Mens fashion casual pocket overalls men's street clothing Korean loose hip-hop",
-      preco: "$119.90",
+      preco: "$136",
       id: "calca_preta",
       imgC: "imgprod",
       count: 1,
@@ -21,7 +21,7 @@ const Produtoff = {
     calca_preta_graph: {
       imgSrc: "./produtos/calca3.jpeg",
       descricao: "Calças Hip Hop Homens Soltos Calças Corredores Streetwear",
-      preco: "$119.90",
+      preco: "$215",
       id: "calca_preta_graph",
       imgC: "imgprod",
       count: 1,
@@ -30,7 +30,7 @@ const Produtoff = {
     moletom_black_white: {
       imgSrc: "./produtos/moletom2.jpeg",
       descricao: "Moletom Masculino Com Capuz Manga Comprida",
-      preco: "$119.90",
+      preco: "$171",
       id: "moletom_black-white",
       imgC: "imgprod",
       count: 1,
@@ -39,7 +39,7 @@ const Produtoff = {
     moletom_ziper_black_white: {
       imgSrc: "./produtos/moletom3.jpeg",
       descricao: "Hong Kong Camisola De Capuz De hip-hop Masculina Com Zíper Preto",
-      preco: "$119.90",
+      preco: "$125",
       id: "moletom-ziper-black-white",
       imgC: "imgprod",
       count: 1,
@@ -48,7 +48,7 @@ const Produtoff = {
     kimono_dragon: {
       imgSrc: "./produtos/kimono1.jpeg",
       descricao: "Demon Kimono Cosplay Samurai Haori Obi Mulheres Homens",
-      preco: "$119.90",
+      preco: "$119",
       id: "kimono-dragon",
       imgC: "imgprod",
       count: 1,
