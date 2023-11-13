@@ -1,3 +1,54 @@
+const prod = JSON.parse(localStorage.getItem('produto'));
+
+const exibidor = document.getElementById('exibidor');
+
+const totalAdicionadosCarrinhoTexto = document.getElementById('produtos-adicionados');
+console.log(prod);
+
+
+// Get an array of keys
+const productKeys = Object.keys(prod);
+let totalAdicionados =0;
+// Iterate through the keys using a for loop
+for (let i = 0; i < productKeys.length; i++) {
+  const key = productKeys[i];
+  const product = prod[key];
+  if(product.count > 0){
+    
+    // Create a new div element
+    const newDiv = document.createElement('div');
+
+
+// Set some properties for the new div
+newDiv.innerHTML = `<div class="exibidor"> 
+<img class="imgprod" src="../public/${product.imgSrc}">
+<p class="descricao" > ${product.descricao} </p>
+<p id="preco"> ${product.preco} </p>
+<span>
+  
+    <button class="botaoQuant"> + </button>
+    <input class="quantidade-produto" type="number" value="${product.count}"></input>    
+    <button class="botaoQuant"> - </button>
+     
+</span>
+</div>`;
+
+// Append the new div to an existing element with the id "container" (assuming such an element exists in your HTML)
+exibidor.appendChild(newDiv);
+
+  console.log(`Product ID: ${product.id}`);
+  console.log(`Description: ${product.descricao}`);
+  console.log(`Price: ${product.preco}`);
+  console.log(`Count: ${product.count}`);
+  console.log("---------------");
+
+  totalAdicionados+=product.count;
+  console.log(totalAdicionados);
+  totalAdicionadosCarrinhoTexto.innerHTML=totalAdicionados;
+  localStorage.setItem('produto', JSON.stringify(product));
+  }
+}
+
 
 // import { produtoInstacia } from "./produto/todosProdutos.js";
 
@@ -14,11 +65,6 @@
 // // var exibidorProds = document.getElementById("exibidor");
 // // var botoes = document.getElementsByClassName("botaoQuant");
 
-if (typeof document !== 'undefined') {
-
-  
-   
-}
 
 
 

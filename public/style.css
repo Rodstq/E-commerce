@@ -112,3 +112,19 @@ header{
     height: 2em;
 }
 }
+
+button{
+    -webkit-appearance:none;
+    appearance: none;
+    box-shadow: none;
+    background-color: rgb(67, 55, 55);
+    color:antiquewhite;
+}
+
+.visible{
+        display:block;
+}
+
+.notVisible{
+    display: none;
+}
