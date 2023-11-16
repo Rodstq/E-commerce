@@ -175,7 +175,7 @@ FinalizarCompra.addEventListener('click', finalizar)
 
 
 function finalizar() {
-  window.alert("PEDIDO FINALIZADO!!!!")
+  alert("PEDIDO FINALIZADO!!!!")
   location.reload(true);
 }
 
