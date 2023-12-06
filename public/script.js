@@ -1,13 +1,18 @@
 import {calca_branca,calca_preta,calca_preta_graph,moletom_black_white, moletom_ziper_black_white,kimono_dragon} from './Produtoff.js';
 
 const exibidorTudo = document.getElementById('carrinhoDisplay');
-let carrin = document.getElementById('carrinhoButton');
+const carrin = document.getElementById('carrinhoButton');
 const exibidorProd = document.getElementById('carroProdutosexibe');
-let homePage = document.getElementById('homePage');
-let vitrine = document.getElementById('produtos');
-let totalValor = document.querySelector('.totalValor');
-let FinalizarCompra = document.querySelector('.finalizarCompra');
-let buttons = document.getElementsByClassName("addcarrinho");
+const formularioEntrega = document.getElementById('entregaSec');
+const botaoXEntregaSec = document.getElementById('fecharEntregaSec');
+const formEntrega = document.getElementById('enderecoCadastro');
+const homePage = document.getElementById('homePage');
+const vitrine = document.getElementById('produtos');
+const totalValor = document.querySelector('.totalValor');
+const FinalizarCompra = document.getElementById('carrinhoBotaoFinalizar');
+const botaoVoltarVitrine = document.getElementById('carrinhoBotaoVitrine');
+const buttons = document.getElementsByClassName("addcarrinho");
+const secaoConta = document.getElementsByClassName('secaoConta');
 let quantTotal;
 let botaoAumenta;
 let botaoDiminui;
@@ -34,6 +39,8 @@ function defineProd(string) {
 
 
 exibidorTudo.classList.add('notVisible');
+formularioEntrega.style.display = 'none';
+
 let arr = [];
 var buttonPressed = function (e) {
 
@@ -139,6 +146,7 @@ var openVitrine = () => {
 carrin.addEventListener('click', openCart);
 // adiciona funcao abrir vitrine no botao ROD COMMERCE
 homePage.addEventListener('click', openVitrine);
+botaoVoltarVitrine.addEventListener('click', openVitrine);
 
 function diminui(s) {
   //selectionar elemento pai
@@ -171,11 +179,20 @@ function valorFinal(array){
   return valor;
 }
 
-FinalizarCompra.addEventListener('click', finalizar)
-
+FinalizarCompra.addEventListener('click', finalizar);
 
 function finalizar() {
-  alert("PEDIDO FINALIZADO!!!!")
-  location.reload(true);
+  formularioEntrega.style.display = 'grid';
 }
 
+botaoXEntregaSec.addEventListener('click', fecharEntregaForm);
+
+function fecharEntregaForm(){
+  formEntrega.reset();
+  formularioEntrega.style.display = 'none';
+}
+
+
+function login(){
+  secaoConta.innerHTML = "Cliente";
+}
