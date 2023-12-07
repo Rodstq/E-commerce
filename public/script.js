@@ -12,7 +12,16 @@ const totalValor = document.querySelector('.totalValor');
 const FinalizarCompra = document.getElementById('carrinhoBotaoFinalizar');
 const botaoVoltarVitrine = document.getElementById('carrinhoBotaoVitrine');
 const buttons = document.getElementsByClassName("addcarrinho");
-const secaoConta = document.getElementsByClassName('secaoConta');
+const secaoConta = document.getElementById('secaoConta');
+const cadastroConta = document.getElementById('CadastroConta');
+const LoginConta = document.getElementById('LoginConta');
+const cadastrarConta = document.getElementById('CadastrarConta');
+const loginForm = document.getElementById('Login');
+const conta = document.getElementById('Login-cadastro');
+const fecharCompra = document.getElementById('fecharCompra');
+const loginBotao = document.getElementById('LoginComConta');
+const cadastrarNovaConta = document.getElementById('CadastrarNovaConta');
+
 let quantTotal;
 let botaoAumenta;
 let botaoDiminui;
@@ -40,6 +49,9 @@ function defineProd(string) {
 
 exibidorTudo.classList.add('notVisible');
 formularioEntrega.style.display = 'none';
+cadastroConta.style.display = 'none';
+conta.style.display = 'none';
+
 
 let arr = [];
 var buttonPressed = function (e) {
@@ -96,6 +108,9 @@ for (var i = 0; i < buttons.length; i++) {
 var openCart = () => {
   vitrine.classList.add('notVisible');
   exibidorTudo.classList.remove('notVisible');
+  formularioEntrega.style.display = 'none';
+  cadastroConta.style.display = 'none';
+  conta.style.display = 'none';
   exibidorTudo.classList.add('carrinhoDisplayCart');
   quantTotal = document.getElementsByClassName('quantidade-produto');
 console.log(quantTotal);
@@ -141,6 +156,9 @@ var openVitrine = () => {
   vitrine.classList.remove("notVisible");
   exibidorTudo.classList.remove('carrinhoDisplayCart');
   exibidorTudo.classList.add('notVisible');
+  formularioEntrega.style.display = 'none';
+cadastroConta.style.display = 'none';
+conta.style.display = 'none';
 }
 //adiciona funcao abrir carrinho no botao do carrinho
 carrin.addEventListener('click', openCart);
@@ -177,22 +195,79 @@ function valorFinal(array){
     console.log(valor);
   }
   return valor;
-}
+};
 
 FinalizarCompra.addEventListener('click', finalizar);
 
 function finalizar() {
   formularioEntrega.style.display = 'grid';
-}
+};
 
 botaoXEntregaSec.addEventListener('click', fecharEntregaForm);
 
 function fecharEntregaForm(){
   formEntrega.reset();
   formularioEntrega.style.display = 'none';
+};
+
+LoginConta.addEventListener('click', irParaLogin);
+
+function irParaLogin(){
+  cadastroConta.style.display = 'none';
+  loginForm.style.display = 'grid';
+};
+
+cadastrarConta.addEventListener('click', irParaCadastro);
+
+function irParaCadastro(){
+  cadastroConta.style.display = 'grid';
+  loginForm.style.display = 'none';
+}
+
+const inputConfirmaSenha = document.getElementById('SenhaCadastroConfirma');
+const SenhaCadastro = document.getElementById('SenhaCadastro');
+const senhaChecker = document.getElementById('senhaChecker');
+
+inputConfirmaSenha.addEventListener('click', confirmaSenha);
+SenhaCadastro.addEventListener('click', confirmaSenha);
+
+function confirmaSenha(){
+  const senha = SenhaCadastro.value;
+  const confirmaSenha = inputConfirmaSenha.value;
+
+  if (senha==""){
+    senhaChecker.innerText = 'Senha vazia';
+  }else if (senha === confirmaSenha) {
+    console.log(senha);
+    senhaChecker.innerText = 'Senha confirmada corretamente.';
+  } else {
+    senhaChecker.innerText = 'As senhas não coincidem. Tente novamente.';
+  }
 }
 
 
-function login(){
-  secaoConta.innerHTML = "Cliente";
+
+loginBotao.addEventListener('click', abrirSecaoLogin);
+
+function abrirSecaoLogin(){
+  conta.style.display = 'flex';
+  cadastroConta.style.display = 'none';
+  loginForm.style.display = 'grid';
+}
+
+
+cadastrarNovaConta.addEventListener('click', abrirSecaoCadastro);
+
+function abrirSecaoCadastro(){
+  conta.style.display = 'flex';
+  cadastroConta.style.display = 'grid';
+  loginForm.style.display = 'none';
+}
+
+let fecharSecaoContas = document.getElementById('fecharSecaoContas');
+
+fecharSecaoContas.addEventListener('click', fechaSecaoContas);
+
+function fechaSecaoContas(){
+  conta.style.display = 'none';
 }
