@@ -47,7 +47,7 @@ function defineProd(string) {
 
 
 
-exibidorTudo.classList.add('notVisible');
+exibidorTudo.style.display = 'none';
 formularioEntrega.style.display = 'none';
 cadastroConta.style.display = 'none';
 conta.style.display = 'none';
@@ -106,8 +106,8 @@ for (var i = 0; i < buttons.length; i++) {
 }
 //funcao exibir carrinho e selecionar todos botoes + e - para adicionar funcoes aumentar e diminuir
 var openCart = () => {
-  vitrine.classList.add('notVisible');
-  exibidorTudo.classList.remove('notVisible');
+  vitrine.style.display = 'none';
+  exibidorTudo.style.display = 'flex';
   formularioEntrega.style.display = 'none';
   cadastroConta.style.display = 'none';
   conta.style.display = 'none';
@@ -153,9 +153,10 @@ function aumenta(s) {
 
 //funcao exibir produtos
 var openVitrine = () => {
-  vitrine.classList.remove("notVisible");
+  vitrine.style.display = 'flex';
+  exibidorTudo.style.display = 'flex';
   exibidorTudo.classList.remove('carrinhoDisplayCart');
-  exibidorTudo.classList.add('notVisible');
+  exibidorTudo.style.display = 'none';
   formularioEntrega.style.display = 'none';
 cadastroConta.style.display = 'none';
 conta.style.display = 'none';

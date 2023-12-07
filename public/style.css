@@ -3,7 +3,6 @@
 }
 
 header {
-    padding: 0em 1em 0 1em;
     display: flex;
     color: antiquewhite;
     align-items: center;
@@ -12,6 +11,17 @@ header {
     height: 5em;
     justify-content:space-between;
     font-size: 70%;
+}
+
+header > h1{
+    padding-left: 1em;
+}
+
+header > h1{
+    padding-right: 1em;
+}
+header > #contas-carrinho{
+    padding-right: 1em;
 }
 
 .menu {
@@ -169,7 +179,6 @@ section>#text {
 
 #secaoConta, #contas-carrinho{
     display: flex;
-    align-items: space-between;
 }
 
 #secaoConta > p, #contas-carrinho> i {
@@ -237,6 +246,7 @@ section>#text {
 };
 
 #Login{
+    display: grid;
     margin-top: 3em;
     display: flex;
     flex-direction: column;
@@ -250,9 +260,12 @@ section>#text {
 }
 
 #Login-cadastro > button {
+    display: flex;
     margin-left: auto;
     width: 10%;
 };
+
+
 
 #CadastroConta{
     display: flex;
@@ -265,11 +278,6 @@ section>#text {
     margin: 0em 1em 0 1em;
     width:80%;
     height: 1.5em;
-}
-
-.notVisible {
-    display: none;
-    
 }
 
 @media (max-width: 900px) {
@@ -307,9 +315,7 @@ section>#text {
         left: 50%;
     };
 
-    .notVisible {
-        display: none;
-    }
+  
    
 
 }
@@ -398,10 +404,6 @@ section>#text {
         top: 50%;
         left: 50%;
     };
-
-    .notVisible {
-        display: none;
-    }
 
     #carroProdutosexibe {
         display: flex;
