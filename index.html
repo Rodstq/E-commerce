@@ -13,9 +13,15 @@
 
 <body>
   <header id="header">
-    <h1 id="homePage"> Rod-Commerce </h1>
-    <input id="procurar">
-    <i id="carrinhoButton" class="fa-sharp fa-solid fa-cart-shopping"></i>
+      <h1 id="homePage"> Rod-Commerce </h1>
+    <div id="contas-carrinho">
+      <div id="secaoConta">
+        <p id="LoginComConta"> Fazer Login </p>
+        <p> | </p>
+        <p id="CadastrarNovaConta"> Criar Conta </p>
+      </div>
+      <i id="carrinhoButton" class="fa-sharp fa-solid fa-cart-shopping"></i>
+    </div>
   </header>
 
   <main class="main">
@@ -85,17 +91,106 @@
 
     <section class="produtos" id="carrinhoDisplay">
       <div class="carrinhoLabel" id="carroProdutos">
+<<<<<<< HEAD
         <h1 id="carrinhoLabelh1"> Total da compra: </h1>
+=======
+        <h1 id="carrinhoLabelh1">Carrinho de Compras</h1>
+        <h1 id="carrinhoLabelh1"> Total da compra: R$ </h1>
+>>>>>>> df324c5565952e0765d6cff8b7272b4ae19bb687
         <h2 class="totalValor" id="carrinhoLabelh1"></h2>
-        <button class="finalizarCompra" id="carrinhoLabelh1"> Finalizar compra </button>
+        <button class="botoesCarrinhopage" id="carrinhoBotaoFinalizar"> Finalizar compra </button>
+        <button class="botoesCarrinhopage" id="carrinhoBotaoVitrine"> Voltar à vitrine </button>
       </div>
       <div id="carroProdutosexibe"></div>
     </section>
+
+    <section class="Entrega" id="entregaSec">
+          <button id="fecharEntregaSec"> X </button>
+          <form id="enderecoCadastro" action="#" method="post">
+          <label for="logradouro">Logradouro:</label>
+          <input type="text" id="logradouro" name="logradouro" required>
+        </br>
+      
+          <label for="numero">Número:</label>
+          <input type="number" id="numero" name="numero" required>
+        </br>
+          <label for="bairro">Bairro:</label>
+          <input type="text" id="bairro" name="bairro" required>
+        </br>
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade" required>
+        </br>
+          <label for="cep">CEP:</label>
+          <input type="number" id="cep" name="cep" pattern="\d{5}-\d{3}" placeholder="12345-678" required>
+        </br>
+          <label for="referencia"> Ponto de Referência:</label>
+          <textarea id="referencia" name="referencia" rows="4" required></textarea>
+        </br>
+          <button id="fecharCompra" type="submit"> Finalizar Compra </button>
+      </form>
+    </section>
+
+    <section class="Conta" id="Login-cadastro">
+      <button id="fecharSecaoContas"> X </button>
+      <div class="botoesContas">
+        <button id="LoginConta"> Login </button>
+        <button id="CadastrarConta"> Cadastrar </button>
+      </div>
+      
+
+       <form id="Login" action="" method="POST"> 
+        
+        <label for="email"> E-mail :</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="senhaLogin"> Senha :</label>
+        <input type="password" id="senhaLogin" name="senhaLogin" required>
+
+        <button id ="botaoLoginConta" type="submit"> Entrar </button>
+
+      </form>
+
+    <form id="CadastroConta" action="" method="POST">
+        <label for="Nome"> Nome :</label>
+        <input type="text" id="Nome" name="Nome" required>
+      </br>
+    
+        <label for="CPF">CPF : </label>
+        <input type="number" id="CPF" name="CPF" required>
+      </br>
+        <label for="Nascimento"> Nascimento :</label>
+        <input type="date" id="Nascimento" name="Nascimento" required>
+      </br>
+        <label for="emailCadastro"> E-mail :</label>
+        <input type="email" id="emailCadastro" name="emailCadastro" required>
+      </br>
+        <label for="SenhaCadastro"> Senha :</label>
+        <input type="password" id="SenhaCadastro" name="SenhaCadastro" required>
+      </br>
+        <label for="SenhaCadastroConfirma">Confirmar Senha:</label>
+        <input type="password" id="SenhaCadastroConfirma" name="SenhaCadastroConfirma" required>
+        <p id="senhaChecker"></p>
+      </br> 
+        <button id ="botaoCadastroConta" type="submit"> Cadastrar </button>
+  </form>
+
+    
+</section>
   </main>
 
   <footer>
-    <a href="#"> contato </a>
-    <a href="#"> sobre nós </a>
+    <p> Desenvolvido por Athos Ferreira </p>
+
+    <div id="links-footer">
+    <a href="#"> 
+      <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+      <p> github </p>
+    </a>
+    <a href="#"> 
+      <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+      <p>Linkedin</p>
+     </a>
+    </div>
   </footer>
 </body>
 

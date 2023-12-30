@@ -6,16 +6,22 @@ header {
     display: flex;
     color: antiquewhite;
     align-items: center;
+    flex-direction: row;
     background-color: rgb(67, 55, 55);
     height: 5em;
-    width: 100%;
-    justify-content: space-evenly;
+    justify-content:space-between;
     font-size: 70%;
 }
 
-header>a {
-    padding: 20px;
-    color: antiquewhite;
+header > h1{
+    padding-left: 1em;
+}
+
+header > h1{
+    padding-right: 1em;
+}
+header > #contas-carrinho{
+    padding-right: 1em;
 }
 
 .menu {
@@ -84,14 +90,17 @@ footer {
     background-color: rgb(51, 37, 37);
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
-footer>a {
+#links-footer >a, footer > p{
     color: antiquewhite;
     padding: 0.5em;
 }
 
+#links-footer{
+    display: flex;
+}
 
 button {
     -webkit-appearance: none;
@@ -100,11 +109,6 @@ button {
     background-color: rgb(67, 55, 55);
     color: antiquewhite;
 }
-
-.notVisible {
-    display: none;
-}
-
 
 section>#text {
     color: white;
@@ -117,7 +121,7 @@ section>#text {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    height: 3em;
+    height: 5em;
     min-width: 80%;
     max-width: 80%;
     background-color: rgba(201, 190, 175, 0.233);
@@ -129,7 +133,7 @@ section>#text {
 
 .imgprodCart {
     display: flex;
-    width: 10%;
+    width: 5em;
     border-radius: 50%;
     margin: 1em;
 }
@@ -148,6 +152,7 @@ section>#text {
 }
 
 #carroProdutosexibe {
+    margin-bottom: 3em;
     display: flex;
     justify-content: center;
     min-width: 85%;
@@ -159,6 +164,7 @@ section>#text {
 }
 
 .carrinhoLabel {
+    margin: 3em 0 3em 0;
     color: rgb(51, 37, 37);
     display: flex;
     flex-direction: row;
@@ -171,56 +177,107 @@ section>#text {
     flex-direction: row;
 }
 
-#carrinhoLabelh1 {
-    margin: 3%;
+#secaoConta, #contas-carrinho{
+    display: flex;
+}
+
+#secaoConta > p, #contas-carrinho> i {
+    font-size: 1em;
+    margin-left: 1em;
 }
 
 #botoesQuant .quantidade-produto {
     width: 3em;
 }
 
-.finalizarCompra {
+.botoesCarrinhopage {
     font-size: 1em;
     height: 2.5em;
 }
 
+#entregaSec{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    width: 20em;
+    background-color: rgb(67, 55, 55);
+    position: fixed;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: antiquewhite;
+    padding: 1em;
+}
 
-/*                            media Queries                    */
+#enderecoCadastro{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
-@media(max-width : 1100px){
-    * {
-        padding: 0;
-        margin: 0;
-    }
+#entregaSec > button{
+    width: 10%;
+    border-radius: 20%;
+    margin-left: auto;
+}
 
-    .main {
-        background-color: rgb(252, 252, 247);
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
+.botoesContas{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    height: 10%;
+    width: 100%;
+}
 
-    .produtos {
-        display: flex;       
-        width: 100%;
-        justify-content: center;
-    }
 
-    .carrinhoDisplayCart {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        min-height: 90vh;
-        width: 100%;
-        justify-content: space-evenly;
-    }
-    #botoesQuant  button {
-        width: 2em;
-    }
+.Conta{
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 20em;
+    min-height: 23em;
+    background-color: rgb(67, 55, 55);
+    position: fixed;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: antiquewhite;
+    padding: 1em;
+};
 
-    .notVisible {
-        display: none;
-    }
+#Login{
+    display: grid;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+#Login>button, #Login > label , #Login>input{
+    margin: 1em 1em 0 1em;
+    border-radius: 1em;
+    width:80%;
+    height: 1.5em;
+}
+
+#Login-cadastro > button {
+    display: flex;
+    margin-left: auto;
+    width: 10%;
+};
+
+
+
+#CadastroConta{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+#CadastroConta>button, #CadastroConta > label , #CadastroConta>input{
+    border-radius: 1em;
+    margin: 0em 1em 0 1em;
+    width:80%;
+    height: 1.5em;
 }
 
 @media (max-width: 900px) {
@@ -246,15 +303,24 @@ section>#text {
         justify-content: center;
     }
 
-    .notVisible {
-        display: none;
-    }
+    #entregaSec{
+        width: 15em;
+        top: 50%;
+        left: 50%;
+    };
+
+    .Conta{
+        width: 15em;
+        top: 50%;
+        left: 50%;
+    };
+
+  
    
 
 }
 
 @media(max-width: 600px){
-
 
     .carrinhoDisplayCart {
         display: flex;
@@ -333,12 +399,11 @@ section>#text {
         justify-content: center;
     }
 
-    .notVisible {
-        display: none;
-    }
-
-
-
+    .Conta{
+        width: 12em;
+        top: 50%;
+        left: 50%;
+    };
 
     #carroProdutosexibe {
         display: flex;
