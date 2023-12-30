@@ -168,7 +168,7 @@ function valorFinal(array){
     valor+=parent.querySelector('.preco').innerText.substring(1) * array[i].value;
     console.log(valor);
   }
-  return valor;
+  return valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
 }
 
 FinalizarCompra.addEventListener('click', finalizar)
