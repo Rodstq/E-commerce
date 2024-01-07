@@ -6,28 +6,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Rod-Commerce </title>
-  <link rel="stylesheet" type="text/css" href="../public/style.css">
+  <link rel="stylesheet" type="text/css" href="../src/output.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <script type="module" src="../public/script.js" defer></script>
 </head>
 
-<body>
-  <header id="header">
+<body class="bg-orange-50 font-semibold">
+  <header id="header" class="h-20 font-semibold text-white bg-amber-950 flex justify-between items-center px-5">
       <h1 id="homePage"> Rod-Commerce </h1>
     <div id="contas-carrinho">
-      <div id="secaoConta">
-        <p id="LoginComConta"> Fazer Login </p>
-        <p> | </p>
-        <p id="CadastrarNovaConta"> Criar Conta </p>
-      </div>
-      <i id="carrinhoButton" class="fa-sharp fa-solid fa-cart-shopping"></i>
+      <div id="secaoConta" class=" px-1 flex justify-between items-center">
+        <p id="LoginComConta" class="px-1"> Fazer Login </p>
+        <p class="px-1"> | </p>
+        <p id="CadastrarNovaConta" class="px-1"> Criar Conta </p>
+        <i id="carrinhoButton" class="fa-sharp fa-solid fa-cart-shopping px-1"></i>
+      </div>  
     </div>
   </header>
 
   <main class="main">
 
-    <div class="produtos" id="produtos">
-      <div class="exibidor">
+    <div class="produtos w-50 m-10 flex flex-wrap" id="produtos">
+      <div class="exibidor ">
         <img class="imgprod" src="../public/produtos/calca1.jpeg">
         <p class="descricao"> Calça Cargo Bolso Masculino Preto Hip Hop Casual Jogger Streetwear </p>
         <p id="preco"> $150 </p>
@@ -89,8 +89,8 @@
 
     </div>
 
-    <section class="produtos" id="carrinhoDisplay">
-      <div class="carrinhoLabel" id="carroProdutos">
+    <section class="produtos h-screen flex flex-col " id="carrinhoDisplay">
+      <div class="carrinhoLabel flex items-start" id="carroProdutos">
         <h1 id="carrinhoLabelh1">Carrinho de Compras</h1>
         <h1 id="carrinhoLabelh1"> Total da compra :  </h1>
         <h2 class="totalValor" id="carrinhoLabelh1"></h2>
@@ -126,15 +126,17 @@
       </form>
     </section>
 
-    <section class="Conta" id="Login-cadastro">
-      <button id="fecharSecaoContas"> X </button>
-      <div class="botoesContas">
-        <button id="LoginConta"> Login </button>
-        <button id="CadastrarConta"> Cadastrar </button>
+    <section class="Conta rounded-xl flex-col bg-amber-950 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+    h-auto w-80 items-center py-5 text-white"  id="Login-cadastro">
+      
+      <div class="botoesContas px-3 w-full h-full flex justify-between">
+        <button id="LoginConta" class=" w-32 bg-white text-amber-950"> Login </button>
+        <button id="CadastrarConta" class="w-32 bg-white text-amber-950"> Cadastrar </button>
+        <button id="fecharSecaoContas" class=" bg-white text-amber-950 w-5"> X </button>
       </div>
       
 
-       <form id="Login" action="" method="POST"> 
+       <form id="Login"  class=" flex-col" action="" method="POST"> 
         
         <label for="email"> E-mail :</label>
         <input type="email" id="email" name="email" required>
@@ -142,11 +144,11 @@
         <label for="senhaLogin"> Senha :</label>
         <input type="password" id="senhaLogin" name="senhaLogin" required>
 
-        <button id ="botaoLoginConta" type="submit"> Entrar </button>
+        <button id ="botaoLoginConta" class="m-3 bg-white text-amber-950" type="submit"> Entrar </button>
 
       </form>
 
-    <form id="CadastroConta" action="" method="POST">
+    <form id="CadastroConta" class=" flex-col rounded-full" action="" method="POST">
         <label for="Nome"> Nome :</label>
         <input type="text" id="Nome" name="Nome" required>
       </br>
@@ -167,24 +169,24 @@
         <input type="password" id="SenhaCadastroConfirma" name="SenhaCadastroConfirma" required>
         <p id="senhaChecker"></p>
       </br> 
-        <button id ="botaoCadastroConta" type="submit"> Cadastrar </button>
+        <button id ="botaoCadastroConta" class="m-1  bg-white text-amber-950" type="submit"> Cadastrar </button>
   </form>
 
     
 </section>
   </main>
 
-  <footer>
+  <footer class="h-20 font-semibold text-white bg-amber-950 flex justify-between items-center px-5">
     <p> Desenvolvido por Athos Ferreira </p>
 
-    <div id="links-footer">
+    <div id="links-footer" class="px-1 flex justify-between">
     <a href="#"> 
-      <i class="fa-brands fa-github" style="color: #ffffff;"></i>
-      <p> github </p>
+      <i class="fa-brands fa-github px-1" style="color: #ffffff;"></i>
+      <p class="px-1"> github </p>
     </a>
     <a href="#"> 
       <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
-      <p>Linkedin</p>
+      <p class="px-1">Linkedin</p>
      </a>
     </div>
   </footer>

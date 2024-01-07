@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+    .exibidorCart{
+        @apply flex flex-row justify-evenly align-bottom items-center p-4 mx-auto my-3 bg-white w-4/5 h-36 rounded-lg border-2 border-zinc-300;
+    }
+
+    .exibidor{
+        @apply flex flex-col justify-between p-4 mx-auto my-3 bg-white w-56 h-auto rounded-lg border-2 border-zinc-300;
+    }
+
+    .addcarrinho,  .botoesCarrinhopage {
+        @apply w-auto px-2 py-1 bg-amber-950 mx-2 hover:bg-amber-800 active:bg-amber-700  text-white my-3;
+    }  
+
+    .botaoDiminui, .botaoAumenta{
+    @apply mx-2 w-6 h-6 bg-amber-950 hover:bg-amber-800 active:bg-amber-700  text-white
+    }
+
+    .quantidade-produto{
+        @apply h-5 w-8 ;
+    }
+
+    .buttonsPrice{
+        @apply items-center justify-center flex appearance-none;
+    }
+    .imgprodCart{
+        @apply w-24 mx-2;
+    }
+
+    /* @layer utilities {
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+          @apply appearance-none;
+        }
+      } */

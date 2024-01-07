@@ -91,7 +91,7 @@ var buttonPressed = function (e) {
          <img class="imgprodCart" id="imgsrc" src="../public/${arr[i].imgSrc}">
          <p class="descricaoCart" > ${arr[i].descricao} </p>
          <p class="preco"> ${arr[i].preco} </p>
-         <span id="botoesQuant">
+         <span id="botoesQuant" class="buttonsPrice">
         <button class="botaoAumenta" id="${arr[i].id}"> + </button>
         <input class="quantidade-produto" id="quant" type="number" min="0" value="${arr[i].quantidade}"> 
         <button class="botaoDiminui" id="${arr[i].id}"> - </button>
@@ -254,7 +254,7 @@ loginBotao.addEventListener('click', abrirSecaoLogin);
 function abrirSecaoLogin(){
   conta.style.display = 'flex';
   cadastroConta.style.display = 'none';
-  loginForm.style.display = 'grid';
+  loginForm.style.display = 'flex';
 }
 
 
@@ -262,7 +262,7 @@ cadastrarNovaConta.addEventListener('click', abrirSecaoCadastro);
 
 function abrirSecaoCadastro(){
   conta.style.display = 'flex';
-  cadastroConta.style.display = 'grid';
+  cadastroConta.style.display = 'flex';
   loginForm.style.display = 'none';
 }
 
