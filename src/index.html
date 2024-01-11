@@ -24,9 +24,9 @@
     </div>
   </header>
 
-  <main class="main">
+  <main class="main flex flex-row justify-center min-h-screen">
 
-    <div class="produtos w-50 m-10 flex flex-wrap" id="produtos">
+    <div class="produtos w-3/5 main flex flex-row justify-center flex-wrap h-fit" id="produtos">
       <div class="exibidor ">
         <img class="imgprod" src="../public/produtos/calca1.jpeg">
         <p class="descricao"> Calça Cargo Bolso Masculino Preto Hip Hop Casual Jogger Streetwear </p>
@@ -89,45 +89,44 @@
 
     </div>
 
-    <section class="produtos h-screen flex flex-col " id="carrinhoDisplay">
-      <div class="carrinhoLabel flex items-start" id="carroProdutos">
-        <h1 id="carrinhoLabelh1">Carrinho de Compras</h1>
+    <section class="produtos flex flex-col min-w-full px-3 " id="carrinhoDisplay">
+      <div class="carrinhoLabel flex items-center justify-between" id="carroProdutos">
         <h1 id="carrinhoLabelh1"> Total da compra :  </h1>
         <h2 class="totalValor" id="carrinhoLabelh1"></h2>
         <button class="botoesCarrinhopage" id="carrinhoBotaoFinalizar"> Finalizar compra </button>
         <button class="botoesCarrinhopage" id="carrinhoBotaoVitrine"> Voltar à vitrine </button>
       </div>
-      <div id="carroProdutosexibe"></div>
+      <div id="carroProdutosexibe" class="carroProdutosexibe"></div>
     </section>
 
-    <section class="Entrega" id="entregaSec">
-          <button id="fecharEntregaSec"> X </button>
-          <form id="enderecoCadastro" action="#" method="post">
+    <section class="Entrega " id="entregaSec">
+          <button id="fecharEntregaSec" class="bg-white w-5 text-amber-950 place-self-end"> X </button>
+          <form id="enderecoCadastro" class="grid" action="#" method="post">
           <label for="logradouro">Logradouro:</label>
           <input type="text" id="logradouro" name="logradouro" required>
-        </br>
-      
+
           <label for="numero">Número:</label>
           <input type="number" id="numero" name="numero" required>
-        </br>
+        
           <label for="bairro">Bairro:</label>
           <input type="text" id="bairro" name="bairro" required>
-        </br>
+        
           <label for="cidade">Cidade:</label>
           <input type="text" id="cidade" name="cidade" required>
-        </br>
+        
           <label for="cep">CEP:</label>
+        
           <input type="number" id="cep" name="cep" pattern="\d{5}-\d{3}" placeholder="12345-678" required>
-        </br>
+        
           <label for="referencia"> Ponto de Referência:</label>
           <textarea id="referencia" name="referencia" rows="4" required></textarea>
-        </br>
-          <button id="fecharCompra" type="submit"> Finalizar Compra </button>
+          <br>
+        
+          <button id="fecharCompra" type="submit" class="w-32 bg-white text-amber-950"> Finalizar Compra </button>
       </form>
     </section>
 
-    <section class="Conta rounded-xl flex-col bg-amber-950 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
-    h-auto w-80 items-center py-5 text-white"  id="Login-cadastro">
+    <section class="Conta"  id="Login-cadastro">
       
       <div class="botoesContas px-3 w-full h-full flex justify-between">
         <button id="LoginConta" class=" w-32 bg-white text-amber-950"> Login </button>
@@ -167,7 +166,7 @@
       </br>
         <label for="SenhaCadastroConfirma">Confirmar Senha:</label>
         <input type="password" id="SenhaCadastroConfirma" name="SenhaCadastroConfirma" required>
-        <p id="senhaChecker"></p>
+        <p id="senhaChecker" class="flex flex-wrap w-48"></p>
       </br> 
         <button id ="botaoCadastroConta" class="m-1  bg-white text-amber-950" type="submit"> Cadastrar </button>
   </form>
@@ -180,11 +179,11 @@
     <p> Desenvolvido por Athos Ferreira </p>
 
     <div id="links-footer" class="px-1 flex justify-between">
-    <a href="#"> 
+    <a href="https://github.com/Rodstq"> 
       <i class="fa-brands fa-github px-1" style="color: #ffffff;"></i>
       <p class="px-1"> github </p>
     </a>
-    <a href="#"> 
+    <a href="https://www.linkedin.com/in/athos-ferreira/"> 
       <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
       <p class="px-1">Linkedin</p>
      </a>

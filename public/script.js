@@ -202,7 +202,7 @@ FinalizarCompra.addEventListener('click', finalizar)
 
 
 function finalizar() {
-  formularioEntrega.style.display = 'grid';
+  formularioEntrega.style.display = 'flex';
 };
 
 botaoXEntregaSec.addEventListener('click', fecharEntregaForm);
