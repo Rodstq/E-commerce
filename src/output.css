@@ -682,7 +682,7 @@ input[type="number"]::-webkit-inner-spin-button,
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
     display: flex;
-    height: auto;
+    height: 20rem;
     width: 14rem;
     flex-direction: column;
     flex-wrap: wrap;
@@ -699,6 +699,7 @@ input[type="number"]::-webkit-inner-spin-button,
 
   .carroProdutosexibe {
     display: flex;
+    min-height: 100vh;
     flex-wrap: wrap;
     justify-content: center;
   }
