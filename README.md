@@ -1,3 +1,3 @@
 # Projeto E-commerce 
 ## Projeto de página inicial para CRUD completo de um e-commerce
-## utilizando CSS, HTML, e JavaScript (Node e MySQL serão incluídos posteriormente)
+## utilizando CSS, HTML, JavaScript e Tailwind (React e banco de dados serão adicionados)

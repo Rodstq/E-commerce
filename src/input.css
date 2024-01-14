@@ -5,7 +5,7 @@
     @screen phone{
 
         .exibidorCart{
-        @apply flex flex-col flex-wrap justify-around items-center p-4 mx-2 my-3 bg-white w-56 h-80 rounded-lg border-2 border-zinc-300;
+        @apply flex flex-col flex-wrap justify-around items-center p-4 mx-2 my-3 bg-white w-40 h-80 rounded-lg border-2 border-amber-900;
         }
 
         .carroProdutosexibe{
@@ -17,7 +17,7 @@
         }
 
         .addcarrinho{
-            @apply hidden group-hover:block group-hover:absolute group-hover:top-32 group-hover:right-12;
+            @apply hidden group-hover:block group-hover:absolute group-hover:top-32 group-hover:right-6;
         }
     
     }
@@ -31,17 +31,21 @@
             @apply grid grid-cols-5 gap-5 items-center p-4 mx-auto my-3 bg-white  rounded-lg border-2 border-zinc-300;
         }
         .addcarrinho{
-            @apply hidden group-hover:block group-hover:absolute group-hover:top-32 group-hover:right-10;
+            @apply hidden group-hover:block group-hover:absolute group-hover:top-32 group-hover:right-3;
         }
     
     }
+
+    .produtos{
+        @apply my-4 max-w-6xl flex flex-wrap justify-center min-h-screen;
+    }
    
     .exibidor{
-        @apply flex flex-col items-center relative justify-end px-3 my-3 w-auto h-80;
+        @apply flex flex-col items-center relative justify-end my-3 w-52 h-80;
     }
 
     .imgprod{
-        @apply w-9/12 h-3/4 ;
+        @apply w-11/12 h-3/4 ;
     }
 
     .descricao{

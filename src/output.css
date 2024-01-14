@@ -564,11 +564,6 @@ video {
   height: 5rem;
 }
 
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
 .h-full {
   height: 100%;
 }
@@ -593,10 +588,6 @@ video {
   min-width: 100%;
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -607,10 +598,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
 }
 
 .justify-between {
@@ -683,7 +670,7 @@ input[type="number"]::-webkit-inner-spin-button,
     margin-bottom: 0.75rem;
     display: flex;
     height: 20rem;
-    width: 14rem;
+    width: 10rem;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -691,7 +678,7 @@ input[type="number"]::-webkit-inner-spin-button,
     border-radius: 0.5rem;
     border-width: 2px;
     --tw-border-opacity: 1;
-    border-color: rgb(212 212 216 / var(--tw-border-opacity));
+    border-color: rgb(120 53 15 / var(--tw-border-opacity));
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
     padding: 1rem;
@@ -716,7 +703,7 @@ input[type="number"]::-webkit-inner-spin-button,
   .group:hover .addcarrinho {
     position: absolute;
     top: 8rem;
-    right: 3rem;
+    right: 1.5rem;
     display: block;
   }
 }
@@ -754,9 +741,19 @@ input[type="number"]::-webkit-inner-spin-button,
   .group:hover .addcarrinho {
     position: absolute;
     top: 8rem;
-    right: 2.5rem;
+    right: 0.75rem;
     display: block;
   }
+}
+
+.produtos {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  min-height: 100vh;
+  max-width: 72rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .exibidor {
@@ -765,17 +762,15 @@ input[type="number"]::-webkit-inner-spin-button,
   margin-bottom: 0.75rem;
   display: flex;
   height: 20rem;
-  width: auto;
+  width: 13rem;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .imgprod {
   height: 75%;
-  width: 75%;
+  width: 91.666667%;
 }
 
 .descricao {

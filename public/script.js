@@ -1,4 +1,4 @@
-import {calca_branca,calca_preta,calca_preta_graph,moletom_black_white, moletom_ziper_black_white,kimono_dragon} from './Produtoff.js';
+import {calca_branca,calca_preta,calca_preta_graph,moletom_black_white, moletom_ziper_black_white,kimono_dragon,baki,moletom_purple,baseball_jacket} from './Produtoff.js';
 
 const exibidorTudo = document.getElementById('carrinhoDisplay');
 const carrin = document.getElementById('carrinhoButton');
@@ -42,6 +42,12 @@ function defineProd(string) {
           return moletom_ziper_black_white;
       case "kimono_dragon":
         return kimono_dragon;
+      case "baki":
+        return baki;
+      case "baseball-jacket":
+        return baseball_jacket;
+      case "moletom-purple":
+        return moletom_purple;
   }
 }
 
