@@ -9,7 +9,7 @@
         }
 
         .carroProdutosexibe{
-            @apply flex flex-wrap justify-center;
+            @apply flex flex-wrap justify-center min-h-screen;
         }
 
         *{
